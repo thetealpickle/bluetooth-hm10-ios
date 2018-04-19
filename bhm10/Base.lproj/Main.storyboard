@@ -20,23 +20,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-o7-u33">
-                                <rect key="frame" x="67" y="157" width="240" height="353"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="BDr-d3-TIj"/>
-                                    <constraint firstAttribute="height" constant="353" id="fwx-aY-mve"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bluetoothCell" rowHeight="71" id="IoM-W4-Adq" customClass="BluetoothCell" customModule="bhm10" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="71"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IoM-W4-Adq" id="YyJ-nM-8oA">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZj-3f-66f">
                                                     <rect key="frame" x="15" y="25" width="45" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -46,18 +42,30 @@
                                                 <constraint firstItem="kZj-3f-66f" firstAttribute="centerY" secondItem="YyJ-nM-8oA" secondAttribute="centerY" id="dpK-Ab-t7H"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.50979275170000005" blue="0.60734049479999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="signalLabel" destination="kZj-3f-66f" id="M5n-cy-02u"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BHM10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rY-Ly-ReP">
+                                <rect key="frame" x="152" y="52" width="70" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="RIS-o7-u33" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5o2-Y9-mc6"/>
+                            <constraint firstItem="1rY-Ly-ReP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="E4u-yu-8T0"/>
+                            <constraint firstItem="RIS-o7-u33" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LdD-fR-9nF"/>
                             <constraint firstItem="RIS-o7-u33" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QMG-Tv-0Jp"/>
-                            <constraint firstItem="RIS-o7-u33" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fjH-tA-7rk"/>
+                            <constraint firstItem="1rY-Ly-ReP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZ2-wb-fFm"/>
+                            <constraint firstItem="RIS-o7-u33" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="58" id="fjH-tA-7rk"/>
+                            <constraint firstItem="RIS-o7-u33" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wng-o8-3O8"/>
+                            <constraint firstItem="RIS-o7-u33" firstAttribute="top" secondItem="1rY-Ly-ReP" secondAttribute="bottom" constant="40" id="xVS-kN-aEC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
